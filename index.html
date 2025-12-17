@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Electronics, experiments, and questionable ideas - A blog about hardware projects, software, and DIY electronics" />
-    <title>Zak's Electronics Blog</title>
+    <title>Tejash's Electronics Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
       <div class="header-container">
         <div class="logo-section">
           <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Profile Avatar" class="avatar" />
-          <h1 class="site-title">Zak's Electronics Blog</h1>
+          <h1 class="site-title">Tejash's Electronics Blog</h1>
         </div>
 
         <nav class="main-nav">
@@ -103,14 +103,18 @@
       <div class="content-container">
         <article class="blog-card">
           <div class="blog-content">
-            <h2 class="blog-title">Laptop Bench Power Supply</h2>
+            <h2 class="blog-title">Precision DC Motor Control Using the TB6612FNG Dual H-Bridge Driver</h2>
             <p class="blog-excerpt">
-              Many years ago (September 2009) I made a simple bench power supply using an LT1083 7.5A linear regulator with adjustable output voltage designed to be used with a 19.5V 3.42A laptop power supply. It still works fine after years of abuse, but my choice of output power connectors was poor (3 pin headers, the sort used for PC fans), it's made on strip board and cooling was sometimes a problem, so time for an upgrade!
+            In modern robotics and automation systems, efficient and precise motor control is a non-negotiable. For this project, I implemented the TB6612FNG dual H-Bridge motor driver to achieve smooth, reliable control of DC motors in an embedded environment.
+
+The TB6612FNG was interfaced with a microcontroller such as Arduino or ESP32, enabling full control over motor direction and speed using PWM signals. This setup allowed seamless forward and reverse motion while maintaining high efficiency and low power consumption.
+
+One of the standout advantages of the TB6612FNG is its low standby current, making it ideal for battery-powered systems. Each channel supports up to 1.2A continuous current, which is sufficient for most small to medium DC motors used in robotics. Additionally, the driver includes built-in thermal shutdown protection, ensuring system safety under high-load conditions.
+
+By modulating the PWM duty cycle, precise speed control was achieved, resulting in smooth acceleration and deceleration of the motors. Direction control was handled through digital logic inputs, making the overall implementation clean, scalable, and easy to debug.
+
+This project reinforced core concepts of embedded motor control and demonstrated how proper driver selection can significantly improve system performance in robotics and automation applications.
             </p>
-            <a href="#" class="continue-reading">
-              Continue reading...
-              <svg class="arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </a>
             <div class="blog-meta">
@@ -136,7 +140,7 @@
             </div>
           </div>
           <div class="blog-image">
-            <img src="https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Laptop Bench Power Supply Project" loading="lazy" />
+            <img src="https://freeimage.host/i/fc8I2Zg" alt="Laptop Bench Power Supply Project" loading="lazy" />
           </div>
         </article>
 
